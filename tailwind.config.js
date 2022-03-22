@@ -4,7 +4,15 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero-dark': "url('/img/hero-dark.jpg')",
+        'footer-bg': "url('/img/footer-bg.jpg')",
+      },
+      colors: {
+        netflix: '#E41E26',
+      },
+    },
   },
   plugins: [],
 }
