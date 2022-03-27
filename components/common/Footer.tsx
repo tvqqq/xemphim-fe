@@ -3,9 +3,9 @@ import MiniLogo from './MiniLogo'
 const Footer = () => {
   return (
     <div className="bg-footer-bg">
-      <div className="relative flex items-center pt-10 pb-16 text-slate-200 font-semibold w-1/2 mx-auto">
-        <MiniLogo className="w-1/2" />
-        <div className="ml-5 border-t flex-col text-slate-500 border-slate-200/5">
+      <div className="relative items-center pt-10 pb-16 text-slate-200 font-semibold flex-row text-center lg:w-1/2 lg:flex  lg:text-left lg:mx-auto">
+        <MiniLogo className="translate-x-1/2 w-1/2 absolute z-10 opacity-20 lg:translate-x-0 lg:w-1/3 lg:static lg:opacity-100" />
+        <div className="mx-5 lg:ml-5 lg:mr-0 border-t flex-col text-slate-500 border-slate-200/5  z-20">
           <p>
             Trang web này được xây dựng để phục vụ mục đích học tập (educational
             purposes only). Tất cả nội dung có trên trang web được lấy từ bên

@@ -1,12 +1,11 @@
 import ListMovies from './ListMovies'
 import TopMovie from './TopMovie'
 
-const HomeComponent = () => {
+const HomeComponent = ({ data }) => {
   return (
     <div>
-      <TopMovie />
-      <ListMovies />
-      <ListMovies />
+      <TopMovie data={data.first} />
+      <ListMovies data={data.list} />
     </div>
   )
 }
