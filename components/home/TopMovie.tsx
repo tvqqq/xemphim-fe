@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-const TopMovie = ({ data }) => {
+const TopMovie = ({ data }: { data: any }) => {
   return (
     <div className="max-w-7xl px-4 sm:px-6 md:px-8 lg:grid lg:gap-8 lg:grid-cols-12 lg:items-center mx-auto text-center">
       <div className="relative row-start-1 col-start-1 xl:col-start-3 col-span-7 xl:col-span-6">

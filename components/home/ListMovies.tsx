@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-const ListMovies = ({ data }) => {
+const ListMovies = ({ data }: { data: any }) => {
   return (
     <section>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8  my-20">
@@ -30,7 +30,7 @@ const ListMovies = ({ data }) => {
           </a>
         </div>
         <div className="grid grid-flow-row grid-cols-2 md:grid-cols-4 gap-5 mt-10">
-          {data.map((movie) => (
+          {data.map((movie: any) => (
             <a
               href={`/movie/${movie.id}`}
               className="group mb-10"

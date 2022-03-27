@@ -8,7 +8,7 @@ import Image from 'next/image'
 //   }
 // }
 
-const MovieComponent = ({ data }) => {
+const MovieComponent = ({ data }: { data: any }) => {
   return (
     <>
       <div className="relative">
@@ -98,7 +98,7 @@ const MovieComponent = ({ data }) => {
               Casts
             </div>
             <div className="grid grid-flow-row grid-cols-2 lg:grid-cols-6 gap-10">
-              {data.credits.casts.map((cast) => (
+              {data.credits.casts.map((cast: any) => (
                 <a href="#" className="" key={cast.id}>
                   <Image
                     width="200"
@@ -135,7 +135,7 @@ const MovieComponent = ({ data }) => {
             </div>
           </div>
           <div className="grid grid-flow-row grid-cols-2 lg:grid-cols-4 gap-1 py-10">
-            {data.recommendations.map((movie) => (
+            {data.recommendations.map((movie: any) => (
               <a href={`/movie/${movie.id}`} className="group" key={movie.id}>
                 <div className="w-full drop-shadow-sm transform group-hover:opacity-80 group-hover:scale-95">
                   <Image

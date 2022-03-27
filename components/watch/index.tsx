@@ -1,4 +1,4 @@
-const WatchComponent = ({ data }) => {
+const WatchComponent = ({ data }: { data: any }) => {
   return (
     <>
       <div className="w-full" style={{ height: '80vh' }}>
